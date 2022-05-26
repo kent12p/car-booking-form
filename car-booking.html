@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Car Booking Form</title>
+    </head>
+    
+    <body>
+        <div class ="container">
+        <div class="rectangle">
+            <h1>Car Booking Form</h1>
+        </div>
+        
+        <form action="car-booking-confirm.php" method = "post">
+            <label>Name</label><br>
+            <input class = "inputsep3" type="text" id="fname" name="firstname" placeholder="First">
+            <input class = "inputsep3" type="text" id="lname" name="lastname" placeholder="Last"><br><br>
+
+            <label>Email</label><br>
+            <input type="email" id="email" name="Email"><br><br>
+
+            <label>Phone</label><br>
+            <input type="tel" id="phone" name="Phone"><br><br>
+
+            <label for="name">Number of Passengers</label><br>
+            <input class = "inputsep" type="text" id="passengers" name="Passengers"><br><br>
+
+            <label for="name">Contact Address</label><br>
+                <input class = "inputsep" type="text" id="contactstreetaddress" name="contactstreetAddress" placeholder="Street address"><br>
+                <input class = "inputsep" type="text" id="contactstreetaddresstwo" name="contactstreetAddresstwo" placeholder="Street address line 2"><br>
+                <input class = "inputsep3" type="text" id="contactcity" name="contactCity" placeholder="City">
+                <input class = "inputsep3" type="text" id="contactregion" name="contactRegion" placeholder="Region"><br>
+                <input class = "inputsep3" type="text" id="contactpostal" name="contactPostal" placeholder="Postal/Zip code">
+            <select placeholder="Country" name="contactcountry">
+                <option>Country</option>
+                <option>Philippines</option>
+                <option>India</option>
+                <option>Japan</option>
+            </select><br><br>
+
+            
+            <p>
+                <label>Vehicle</label><br><br>
+                <input type="radio" name="vechicle" value="limousine">Limousine (8-12 person)<br><br>
+                <input type="radio" name="vechicle" value="suv">SUV (6-7 person)<br><br>
+                <input type="radio" name="vechicle" value="van">Van (12-15 person)<br><br>
+                <input type="radio" name="vechicle" value="bus">Bus (50+ person)<br><br>
+                <input type="radio" name="vechicle" value="other">other:<br><br>
+            </p><br>
+            
+            <label>Pick Up Date</label><br>
+                <input class = "inputsep" type="date" id="date" name="date"><br>
+                <label>Pick Up Time</label><br>
+                <input class = "inputsep" type="time" id="time" name="time"><br>
+                <label>If pick up from the airport, please enter airport name</label><br>
+                <input class = "inputsep" type="text" id="airport_address" name="airport_address"><br>
+            <label>Flight Number</label><br>
+            <input class = "inputsep" type="text" id="flight_number" name="flight_number"><br>
+            
+            <label for="name">Pick Up Point</label><br>
+                <input class = "inputsep"type="text" id="pointstreetaddress" name="pointstreetAddress" placeholder="Street address"><br>
+                <input class = "inputsep"type="text" id="pointstreetaddresstwo" name="pointstreetAddresstwo" placeholder="Street address line 2"><br>
+                <input class = "inputsep3"type="text" id="pointcity" name="pointCity" placeholder="City">
+                <input class = "inputsep3"type="text" id="pointregion" name="pointRegion" placeholder="Region"><br>
+                <input class = "inputsep3"type="text" id="pointpostal" name="pointPostal" placeholder="Postal/Zip code">
+            <select placeholder="Country" name="pointcountry">
+                <option>Country</option>
+                <option>Philippines</option>
+                <option>India</option>
+                <option>Japan</option>
+            </select><br><br>
+
+            
+            <label for="name">Destination</label><br>
+                <input class = "inputsep"type="text" id="destitationstreetaddress" name="destitationstreetAddress" placeholder="Street address"><br>
+                <input class = "inputsep"type="text" id="destitationstreetaddresstwo" name="destitationstreetAddresstwo" placeholder="Street address line 2"><br>
+                <input class = "inputsep3"type="text" id="destitationcity" name="destitationCity" placeholder="City">
+                <input class = "inputsep3"type="text" id="destitationregion" name="destitationRegion" placeholder="Region"><br>
+                <input class = "inputsep3"type="text" id="destitationpostal" name="destitationPostal" placeholder="Postal/Zip code">
+            <select placeholder="Country" name="destinationcountry">
+                <option>Country</option>
+                <option>Philippines</option>
+                <option>India</option>
+                <option>Japan</option>
+            </select><br><br>
+
+            
+            <label>Notes</label><br>
+            <textarea name ="comments"rows="6" cols="82"></textarea><br><br>
+            
+            <input class="btnsubmit" type="submit" name="submit" value="SEND">
+
+
+        </form> 
+        </div>
+    </body>
+</html>
